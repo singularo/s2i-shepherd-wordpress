@@ -1,4 +1,4 @@
-wordpress
+
 # This is now an established builder image, see below for starter details
 
 General usage for updates is to test locally as outlined below, but then
