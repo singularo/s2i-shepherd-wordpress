@@ -33,5 +33,11 @@ if [ -n "${WEB_PATH:+1}" ]; then
   fi
 fi
 
+echo "---> Seting up ${PUBLIC_DIR}."
+# If $PUBLIC_DIR is set, ensure it exists.
+if [ -n "${PUBLIC_DIR:+1}" ]; then
+  mkdir -p ${PUBLIC_DIR}
+fi
+
 echo "---> Starting apache2..."
 exec apache2 -D FOREGROUND
