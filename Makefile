@@ -1,4 +1,4 @@
-IMAGE_NAME = uofa/s2i-shepherd-wordpress
+IMAGE_NAME = singularo/s2i-shepherd-wordpress
 
 .PHONY: build
 build:
